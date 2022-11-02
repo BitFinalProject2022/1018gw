@@ -5,7 +5,7 @@
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/fav.png">
+    <link rel="shortcut icon" href="img/logo.png">
     <!-- Author Meta -->
     <meta name="author" content="CodePixar">
     <!-- Meta Description -->
@@ -15,10 +15,13 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>오늘 뭐 입지?</title>
-    <!--
-		CSS
-		============================================= -->
+    <title>7777</title>
+    <style>
+        .nav-link:hover {
+            color: #5cd3f0;
+        }
+    </style>
+
     <link rel="stylesheet" href="css/linearicons.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -31,13 +34,10 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/board.css">
-    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/insta/new_post.css">
 </head>
 
 <body>
-
-    <!-- Start Header Area -->
     <header class="header_area sticky-header">
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light main_box">
@@ -55,8 +55,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html" style="font-size: 11pt;">Home</a>
-                            </li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html"
+                                    style="font-size: 11pt;">Home</a></li>
 
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
@@ -80,8 +80,8 @@
                                             style="font-size: 11pt;">색조합 코디 추천</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="board.html"
-                                    style="font-size: 11pt;">커뮤니티</a></li>
+                            <li class="nav-item"><a class="nav-link" href="list.html" style="font-size: 11pt;">커뮤니티</a>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="contact.html"
                                     style="font-size: 11pt;">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="login.html"
@@ -101,103 +101,144 @@
             </div>
         </div>
     </header>
+    <!-- Start Header Area -->
+
     <!-- End Header Area -->
+    <section id="container">
 
-    <!-- Start Banner Area -->
+    
+    
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <h1 style="text-align: center; color: #5cd3f0;">New Post</h1>
+        <br><br>
+        <div id="main_container">
+    
+            <div class="post_form_container">
+                <form action="#" class="post_form">
 
-    <section class="notice">
-        <br><br><br><br>
-        <!-- board seach area -->
-            <div class="board_wrap" style="color: black;">
-                <div class="board_title">
-                    <strong>공지사항</strong>
-                    <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
-                </div>
-                <div class="board_write_wrap">
-                    <div class="board_write">
-                        <div class="title">
-                            <dl>
-                                <dt>제목</dt>
-                                <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어갑니다"></dd>
-                            </dl>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>카테고리</dt>
-                                <dd><input type="text" placeholder="카테고리 입력"></dd>
-                            </dl>
-                        </div>
-                        <div class="cont">
-                            <textarea placeholder="내용 입력">
-        글 내용이 들어갑니다.</textarea>
+                    <div class="preview">
+                        <div class="upload">
+                            <div class="post_btn">
+                                <div class="plus_icon">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <p>포스트 이미지 추가</p>
+                                <canvas id="imageCanvas"></canvas>
+                                <!--<p><img id="img_id" src="#" style="width: 300px; height: 300px; object-fit: cover" alt="thumbnail"></p>-->
+                            </div>
                         </div>
                     </div>
-                    <div class="bt_wrap">
-                        <a href="view.html" class="on">수정</a>
-                        <a href="view.html">취소</a>
+                    <p>
+                        <input type="file" name="photo" id="id_photo" required="required">
+                    </p>
+                    <p>
+                        <textarea name="content" id="text_field" cols="50" rows="5" placeholder="　140자 까지 등록 가능합니다.
+    #태그명 을 통해서 검색 태그를 등록할 수 있습니다.
+    예시 : #7777 #BIt #OOTD"></textarea>
+    
+                    </p>
+                    <input class="submit_btn" type="submit" value="등록하기">
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    
+    </section>
+
+    <!-- End Banner Area -->
+<br><br><br><br>
+    <!--================Tracking Box Area =================-->
+
+    <!--================End Tracking Box Area =================-->
+
+    <!-- start footer Area -->
+    <footer class="footer-area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>비트교육센터 3조 7777</h6>
+                        <img src="img/logo.png" alt="" style="width: 80px; max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>GITHUB</h6>
+                        <p></p>
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="https://github.com/orgs/BitFinalProject2022/repositories" target="_blank"><img
+                                    src="img/github.png" alt="" style="width: 60px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget mail-chimp">
+                        <h6 class="mb-20">QUICK MENU</h6>
+                        <a href="registration.html"> - 나만의 옷 등록</a><br>
+                        <a href="closet.html"> - 나만의 옷장</i></a><br>
+                        <a href="diary.html"> - 다이어리</i></a><br>
+                        <a href="list.html"> - 자유게시판</i></a><br>
+                        <a href="contact.html"> - CONTACT US</i></a><br>
+                        <a href="login.html"> - LOGIN</i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>ADDRESS</h6>
+                        <p style="color: #5cd3f0;">서울특별시 서초구 서초대로74길33
+                            비트빌 3층</p>
+                        <div class="footer-social d-flex align-items-center">
+
+                        </div>
                     </div>
                 </div>
             </div>
-    </section>
-
-
-
-
-    <!-- End Banner Area -->
-
-
-
-    <!-- start footer Area -->
-	<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>비트교육센터 3조 7777</h6>
-						<img src="img/logo.png" alt="" style="width: 80px; max-width: 100%; height: auto;">
-					</div>
-				</div>
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>GITHUB</h6>
-						<p></p>
-						<div class="footer-social d-flex align-items-center">
-							<a href="https://github.com/orgs/BitFinalProject2022/repositories" target="_blank"><img src="img/github.png" alt="" style="width: 60px;"></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">QUICK MENU</h6>
-						<a href="registration.html"> - 나만의 옷 등록</a><br>
-						<a href="closet.html"> - 나만의 옷장</i></a><br>
-						<a href="diary.html"> - 다이어리</i></a><br>
-						<a href="list.html"> - 자유게시판</i></a><br>
-						<a href="contact.html"> - CONTACT US</i></a><br>
-						<a href="login.html"> - LOGIN</i></a>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>ADDRESS</h6>
-						<p style="color: #5cd3f0;">서울특별시 서초구 서초대로74길33
-							비트빌 3층</p>
-						<div class="footer-social d-flex align-items-center">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<br><br>
-			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap" style="color: black;">
-				<p class="footer-text m-0">
-					Copyright 2022. 7777 all rights reserved.
-				</p>
-			</div>
-		</div>
-	</footer>
+            <br><br>
+            <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap" style="color: black;">
+                <p class="footer-text m-0">
+                    Copyright 2022. 7777 all rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
     <!-- End footer Area -->
+
+    <script src="js/insta.js"></script>
+
+    <script>
+           var fileInput  = document.querySelector( "#id_photo" ),
+               button     = document.querySelector( ".input-file-trigger" ),
+               the_return = document.querySelector(".file-return");
+    
+           // Show image
+           fileInput.addEventListener('change', handleImage, false);
+           var canvas = document.getElementById('imageCanvas');
+           var ctx = canvas.getContext('2d');
+    
+    
+            function handleImage(e){
+               var reader = new FileReader();
+               reader.onload = function(event){
+                   var img = new Image();
+                   // var imgWidth =
+                   img.onload = function(){
+                       canvas.width = 300;
+                       canvas.height = 300;
+                       ctx.drawImage(img,0,0,300,300);
+                   };
+                   img.src = event.target.result;
+                   // img.width = img.width*0.5
+                   // canvas.height = img.height;
+               };
+               reader.readAsDataURL(e.target.files[0]);
+           }
+    
+    
+    </script>
 
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>

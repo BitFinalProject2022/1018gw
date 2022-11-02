@@ -4,32 +4,32 @@
     padding: 0;
 }
 .section_gap {
-    padding: 100px 0;
-    @media (max-width:991px){
-        padding: 80px 0;
+    padding: 10px 0;
+    @media (max-width:1px){
+        padding: 10px 0;
     }
 }
 .section_gap_top_75 {
-    padding: 75px 0;
+    padding: 10px 0;
     @media (max-width:991px){
         padding: 70px 0;
     }
 }
 .section_gap_75 {
-    padding: 75px 0;
+    padding: 10px 0;
     @media (max-width:991px){
         padding: 70px 0;
     }
 }
 .section_gap_top {
-    padding-top: 100px;
-    @media (max-width: 991px) {
-        padding-top: 80px;
+    padding-top: 10px;
+    @media (max-width: 10px) {
+        padding-top: 10px;
     }
 }
 
 .section_gap_bottom {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     @media (max-width: 991px) {
         padding-bottom: 80px;
     }
@@ -54,13 +54,13 @@
 ============================================================================================ */
 
 .gradient-bg {
-    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+    @include gradient(90deg, $primary-color 0%, $primary-color2 0%);
 }
 .gradient-bg-reverse {
-    @include gradient(270deg, $primary-color 0%, $primary-color2 100%);
+    @include gradient(270deg, $primary-color 0%, $primary-color2 0%);
 }
 .gradient-color {
-    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+    @include gradient(90deg, $primary-color 0%, $primary-color2 0%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -92,7 +92,7 @@
         @include transition();
     }
     &:hover{
-        color: #fff;
+        color: rgb(0, 0, 0);
         &:before{
             left: 180px;
             opacity: .3;

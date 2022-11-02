@@ -48,7 +48,7 @@ a {
     min-width: 80px;
     margin-left: 10px;
     padding: 10px;
-    border: 1px solid #000;
+    border: 1px solid #5cd3f0;
     border-radius: 2px;
     font-size: 1.4rem;
 }
@@ -58,7 +58,7 @@ a {
 }
 
 .bt_wrap a.on {
-    background: #000;
+    background: #5cd3f0;
     color: #fff;
 }
 
@@ -159,7 +159,7 @@ a {
 
 .board_view {
     width: 100%;
-    border-top: 2px solid #000;
+    border-top: 2px solid #5cd3f0;
 }
 
 .board_view .title {
